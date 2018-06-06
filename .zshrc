@@ -92,6 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias adb="~/Library/Android/sdk/platform-tools/adb"
+alias sqlite3="~/Library/Android/sdk/platform-tools/sqlite3"
 
 #Hostname
 HOSTNAME=$HOST
