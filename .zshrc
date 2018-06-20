@@ -94,10 +94,13 @@ source $ZSH/oh-my-zsh.sh
 alias adb="~/Library/Android/sdk/platform-tools/adb"
 alias sqlite3="~/Library/Android/sdk/platform-tools/sqlite3"
 
-alias gotoandroid="cd ~/AndroidStudioProjects";
-alias vagranton="cd ~/Homestead && vagrant up";
-alias vagrantoff="cd ~/Homestead && vagrant halt";
-alias gotoweb="cd ~/Homestead && vagrant ssh";
+alias goandro="cd ~/AndroidStudioProjects";
+alias vagon="cd ~/Homestead && vagrant up";
+alias vagoff="cd ~/Homestead && vagrant halt";
+alias goweb="cd ~/Homestead && vagrant ssh";
+
+alias gra="./gradlew"
+
 
 #Hostname
 HOSTNAME=$HOST
