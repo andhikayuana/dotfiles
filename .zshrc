@@ -100,7 +100,7 @@ alias vagoff="cd ~/Homestead && vagrant halt";
 alias goweb="cd ~/Homestead && vagrant ssh";
 
 alias gra="./gradlew"
-
+alias logcat="adb logcat"
 
 #Hostname
 HOSTNAME=$HOST
