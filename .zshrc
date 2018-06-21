@@ -91,9 +91,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias adb="~/Library/Android/sdk/platform-tools/adb"
-alias sqlite3="~/Library/Android/sdk/platform-tools/sqlite3"
-
 alias goandro="cd ~/AndroidStudioProjects";
 alias vagon="cd ~/Homestead && vagrant up";
 alias vagoff="cd ~/Homestead && vagrant halt";
@@ -105,5 +102,11 @@ alias logcat="adb logcat"
 #Hostname
 HOSTNAME=$HOST
 
-#flutter
+#Android
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+#Flutter
 export PATH=~/Library/flutter/bin:$PATH
