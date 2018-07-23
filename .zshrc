@@ -92,10 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias goandro="cd ~/AndroidStudioProjects";
-alias vagon="cd ~/Homestead && vagrant up";
-alias vagoff="cd ~/Homestead && vagrant halt";
-alias vagrel="cd ~/Homestead && vagrant reload --provision"
-alias goweb="cd ~/Homestead && vagrant ssh";
+alias goweb="cd ~/Code";
 
 alias gra="./gradlew"
 alias logcat="adb logcat"
