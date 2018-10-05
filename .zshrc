@@ -96,6 +96,7 @@ alias goweb="cd ~/Code";
 
 alias gra="./gradlew"
 alias logcat="adb logcat"
+alias bundletool="java -jar ~/AndroidStudioProjects/bundletool-all-0.6.0.jar"
 
 #Hostname
 HOSTNAME=$HOST
