@@ -109,3 +109,9 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 #Flutter
 export PATH=~/Library/flutter/bin:$PATH
+
+# JAVA HOME
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+# PostgreSQL
+export PATH=/Library/PostgreSQL/10/bin:$PATH
