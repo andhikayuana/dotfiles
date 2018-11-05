@@ -115,3 +115,6 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 # PostgreSQL
 export PATH=/Library/PostgreSQL/10/bin:$PATH
+
+# MySQL
+export PATH=/usr/local/mysql/bin:$PATH
