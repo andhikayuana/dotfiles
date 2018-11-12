@@ -121,7 +121,10 @@ export PATH=/usr/local/mysql/bin:$PATH
 
 
 export PATH=/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:$PATH
 
-# ruby gem
+# Ruby
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export GEM_HOME=$HOME/.gem
-export PATH="$GEM_HOME/bin:$PATH"
+export PATH=$GEM_HOME/bin:$PATH
+
