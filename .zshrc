@@ -118,3 +118,10 @@ export PATH=/Library/PostgreSQL/10/bin:$PATH
 
 # MySQL
 export PATH=/usr/local/mysql/bin:$PATH
+
+
+export PATH=/usr/local/sbin:$PATH
+
+# ruby gem
+export GEM_HOME=$HOME/.gem
+export PATH="$GEM_HOME/bin:$PATH"
