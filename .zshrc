@@ -130,6 +130,6 @@ export PATH=$GEM_HOME/bin:$PATH
 
 # GoLang Development
 export GOPATH="${HOME}/.go"
-export GOROOT="$(brew --prefix golang)/libexec"
+export GOROOT="$(brew --prefix go)/libexec"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
