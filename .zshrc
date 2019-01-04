@@ -128,3 +128,8 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export GEM_HOME=$HOME/.gem
 export PATH=$GEM_HOME/bin:$PATH
 
+# GoLang Development
+export GOPATH="${HOME}/.go"
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+
