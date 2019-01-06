@@ -115,6 +115,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 # PostgreSQL
 export PATH=/Library/PostgreSQL/10/bin:$PATH
+alias gopostgres="sudo -u postgres psql -U yuana postgres"
 
 # MySQL
 export PATH=/usr/local/mysql/bin:$PATH
@@ -133,3 +134,4 @@ export GOPATH="${HOME}/.go"
 export GOROOT="$(brew --prefix go)/libexec"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
+alias gogo="cd $GOPATH"
