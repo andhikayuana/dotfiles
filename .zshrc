@@ -135,3 +135,6 @@ export GOROOT="$(brew --prefix go)/libexec"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
 alias gogo="cd $GOPATH"
+
+# Qiscus Work
+export PATH=~/Documents/qiscus/backend/sh:$PATH
