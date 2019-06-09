@@ -10,4 +10,4 @@ yuana-machine :computer:
 
 ## TODO
 
-[] Setup script
+[x] Setup script
