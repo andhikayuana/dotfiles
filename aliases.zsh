@@ -12,3 +12,6 @@ alias refresh="source ~/.zshrc"
 
 alias gocode="cd ~/Code";
 
+alias gpom="git push origin master"
+alias gadd="git add ."
+alias gcm="git commit -m "
