@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/andhikayuana/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -58,11 +58,26 @@ ZSH_THEME="pygmalion"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
+plugins=(
+    git 
+    colored-man 
+    colorize 
+    github 
+    jira 
+    vagrant 
+    virtualenv 
+    pip 
+    python 
+    brew 
+    osx 
+    zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+export PATH=/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:$PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -91,50 +106,22 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias goandro="cd ~/AndroidStudioProjects";
-alias goweb="cd ~/Code";
+export DOTDIR=~/Documents/dotfiles
 
-alias gra="./gradlew"
-alias logcat="adb logcat"
-alias bundletool="java -jar ~/AndroidStudioProjects/bundletool-all-0.6.0.jar"
+# Global
+source $DOTDIR/path.zsh
+source $DOTDIR/aliases.zsh
+source $DOTDIR/functions.zsh
 
 #Hostname
 HOSTNAME=$HOST
 
-#Android
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+CONFIGS=(
+    android
+    postgres
+    golang
+)
 
-#Flutter
-export PATH=~/Library/flutter/bin:$PATH
-
-# JAVA HOME
-export JAVA_HOME=$(/usr/libexec/java_home)
-
-# PostgreSQL
-export PATH=/Library/PostgreSQL/10/bin:$PATH
-alias gopostgres="sudo -u postgres psql -U yuana postgres"
-
-# MySQL
-export PATH=/usr/local/mysql/bin:$PATH
-
-
-export PATH=/usr/local/sbin:$PATH
-export PATH=/usr/local/bin:$PATH
-
-# Ruby
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export GEM_HOME=$HOME/.gem
-export PATH=$GEM_HOME/bin:$PATH
-
-# GoLang Development
-export GOPATH="${HOME}/.go"
-export GOROOT="$(brew --prefix go)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
-
-alias gogo="cd $GOPATH"
-
-# Qiscus Work
-export PATH=~/Documents/qiscus/backend/sh:$PATH
+for item in ${CONFIGS[*]}; do
+	load_config $item
+done;

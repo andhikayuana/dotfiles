@@ -2,12 +2,12 @@
 
 yuana-machine :computer:
 
-### Config
-
-* [.zshrc](.zshrc)
-
 ### How to use
 
-* clone this repository
+* clone this repository in to ~/Documents
 * add symlink about the config
 * enjoy! :sunglasses:
+
+## TODO
+
+[] Setup script
