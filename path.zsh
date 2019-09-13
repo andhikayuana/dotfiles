@@ -16,3 +16,6 @@ export PATH=$GEM_HOME/bin:$PATH
 
 # Qiscus Work
 export PATH=~/Documents/qiscus/backend/sh:$PATH
+
+# PHP
+export PATH=/usr/local/php5/bin:$PATH
