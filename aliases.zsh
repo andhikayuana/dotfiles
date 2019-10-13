@@ -22,5 +22,5 @@ alias art="php artisan"
 
 alias gcsqlprox="./cloud_sql_proxy"
 
-
 alias yii="./yii"
+alias phpcs="php ~/Documents/dotfiles/programs/phpcs.phar"
