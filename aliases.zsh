@@ -10,7 +10,7 @@ alias cd....='....'
 
 alias refresh="source ~/.zshrc"
 
-alias gocode="cd ~/Code";
+# alias gocode="cd ~/Code";
 
 alias gpom="git push origin master"
 alias gadd="git add ."
@@ -20,7 +20,7 @@ alias gpo="git pull origin"
 
 alias art="php artisan"
 
-alias gcsqlprox="./cloud_sql_proxy"
+# alias gcsqlprox="./cloud_sql_proxy"
 
-
-alias yii="./yii"
+# alias yii="./yii"
+# alias phpcs="php ~/Documents/dotfiles/programs/phpcs.phar"
