@@ -116,10 +116,12 @@ source $DOTDIR/functions.zsh
 CONFIGS=(
 #     android
 #     postgres
-#     golang
+    golang
     node
+    php
 )
 
 for item in ${CONFIGS[*]}; do
 	load_config $item
 done;
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
