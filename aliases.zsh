@@ -18,9 +18,4 @@ alias gcm="git commit -m "
 alias gco="git checkout"
 alias gpo="git pull origin"
 
-alias art="php artisan"
-
 # alias gcsqlprox="./cloud_sql_proxy"
-
-# alias yii="./yii"
-# alias phpcs="php ~/Documents/dotfiles/programs/phpcs.phar"
