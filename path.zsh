@@ -22,3 +22,6 @@ export PATH=~/Documents/ajaro/sh:$PATH
 
 # PHP
 export PATH=/usr/local/php5/bin:$PATH
+
+# phantomjs
+export PATH=/Users/andhikayuana/Work/phantomjs-2.1.1-macosx/bin:$PATH
