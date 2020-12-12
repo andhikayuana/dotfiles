@@ -119,6 +119,7 @@ CONFIGS=(
     golang
     node
     php
+    ruby
 )
 
 for item in ${CONFIGS[*]}; do
